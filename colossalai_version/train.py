@@ -37,6 +37,7 @@ best_val_loss = 1e9
 out_dir = "./"
 model_name = 'ckpt.pt'
 ckpt_path = os.path.join(out_dir, model_name)
+print(ckpt_path)
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
