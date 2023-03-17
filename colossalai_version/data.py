@@ -14,7 +14,8 @@ def get_x_and_y(data):
 
 
 def load(file_name):
-    data_dir = os.path.join('data')
+    # data_dir = os.path.join('data')
+    data_dir = os.path.join('../input/musicgen/')
     train_data = np.load(os.path.join(data_dir, file_name), allow_pickle=True)
     print(len(train_data))
     return train_data
