@@ -20,6 +20,8 @@ from data import SongDataset
 
 DATA_ROOT = Path(os.environ.get('DATA', './data'))
 
+torch.backends.cudnn.benchmark = True
+
 torch.manual_seed(1337)
 batch_size = 64
 
@@ -149,4 +151,3 @@ def main():
 if __name__ == '__main__':
     main()
     # print(generate(model, "还不如不见"), 10)
-
