@@ -6,8 +6,7 @@ from torch.nn import functional as F
 import os
 import json
 
-# n_embd = 512
-n_embd = 448
+n_embd = 512
 # n_embd = 16
 n_head = 8
 # n_layer = 12
